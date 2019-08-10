@@ -1,10 +1,13 @@
 function clusters = AssignToClusters(image,colours)
 %This function assigns each pixel in an image to a cluster, based on which
 %mean colour that point is closest to.
+%
 %INPUT: image, the 3D image array
 %       colours, a 3D array containing the colours for random points
 %OUTPUT: clusters, a 2D array with the same size as the image, containing
 %                  the corresponding cluster number for each pixel
+%
+%Author: Seif Younes
 
 %Create clusters array with appropriate dimensions
 clusters = zeros(size(image,1),size(image,2));

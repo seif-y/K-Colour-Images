@@ -1,10 +1,13 @@
 function colours = GetRGBValuesForPoints(image,points)
 %This function returns the RGB values for a list of specified points from
 %an image
+%
 %INPUT: image, the 3D image array
 %       points, the 2D array containing a list of pixel co-ordinates
 %OUTPUT: colours, a 3D array containing the RGB values for each point on
 %                 the given list
+%
+%Author: Seif Younes
 
 %Create the colours array with appropriate dimensions
 colours = zeros(size(points,1),1,3);

@@ -1,9 +1,12 @@
 function points = SelectKRandomPoints(image,k)
 
 %This function generates a list of k randomly selected pixels from an image
+%
 %INPUT: image, the 3D image array
 %       k, the no. of pixels to be chosen
 %OUTPUT: cluster, the array containing the randomly selected pixels
+%
+%Author: Seif Younes
 
 %Create the points array with appropriate dimensions
 points = zeros(k,2);

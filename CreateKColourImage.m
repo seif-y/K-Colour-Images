@@ -2,9 +2,12 @@ function kColourImage = CreateKColourImage(clusters,means)
 %This function creates a k-colour image based on an image that has had its
 %pixels divided into clusters. All pixels in a given cluster will be
 %recoloured using the mean RGB values for that cluster
+%
 %INPUT: clusters, the 2D array containing the cluster that each pixel is in
 %       means, the 3D array containing the mean RGB values for each cluster
 %OUTPUT: kColourImage, the 3D array for the k-colour image
+%
+%Author: Seif Younes
 
 %Creat kColourImage array with appropriate dimensions
 kColourImage = zeros(size(clusters,1),size(clusters,2),3);

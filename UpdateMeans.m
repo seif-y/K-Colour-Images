@@ -1,10 +1,13 @@
 function means = UpdateMeans(image,k,clusters)
 %This function calculates the mean values for each cluster of colours
+%
 %INPUT: image, the 3D image array
 %       k, the number of clusters
 %       clusters, the 2D array containing the cluster that each pixel
 %                 belongs to
 %OUTPUT: means, a 3D array containing the average RGB for each cluster
+%
+%Author: Seif Younes
 
 %Create means array with appropriate dimensions
 means = zeros(k,1,3);

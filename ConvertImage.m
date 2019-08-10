@@ -6,12 +6,12 @@
 % implemented: SelectKRandomPoints, GetRGBValuesForPoints, KMeansRGB and
 % CreateKColourImage
 % 
-% Author: Peter Bier
+% Author: Peter Bier (Updates made by Seif Younes)
 
 % Read in an image to convert
 % If enter is hit the image to read will default to clocktower.jpg
 imageName = input('Please enter the name of the image you which to convert:','s');
-if length(imageName) == 0
+if isempty(imageName)
     imageName = 'clocktower.jpg';
 end
 A = imread(imageName);

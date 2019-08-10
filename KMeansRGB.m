@@ -1,11 +1,14 @@
 function [clusters,means] = KMeansRGB(image,seedMeans,maximum)
 %This function partitions all points in an image into k clusters using the
 %k-means algorithm
+%
 %INPUT: image, the 3D image array
 %       seedMeans, the 3D array containing the seed mean RGB values
 %       maximum, the maximum number of iterarions for the k-mean algorithm
 %OUTPUT: clusters, a 2D array containing the cluster each pixel is in
 %        means, a 3D array containing the final mean RGB values
+%
+%Author: Seif Younes
 
 %Means array will first be set to be equal to seed means array
 means = seedMeans;
